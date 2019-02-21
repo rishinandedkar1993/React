@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Person from './Person/Person';    //importing the Person component
 
 class App extends Component {
   render() {
@@ -20,6 +21,8 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        {/*Content inside the <Person> tag rendered between <header> and <div> */}
+        <Person name="Rishi" age="25">I live in Boston</Person>
       </div>
     );
   }
